@@ -1,12 +1,22 @@
 {% extends 'base.html' %}
 
 {% block head %}   
-<h2>
-    Play at your own risk!
-</h2>
+<link rel="stylesheet" href='./static/css/landing.css'>
+
 {% endblock %}
 
 
 {% block body %}
+
+<h1>Ether Flip</h1>
+<div class="form-container">
+    <h2>How much ether are you willing to bet? (up to .5 eth)</h2>
+    <p>Double the bet will be returned if heads, and none will be returned on tails</p>
+    <form id="form">
+        <label for="bet">I'm betting: </label>
+        <input type="text" id="bet" name="bet"><br>
+        <button id="btn" type="submit">Submit</button>
+    </form>
+</div>
 
 {% endblock %}
